@@ -7,31 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<script>
-function sendEmail(event) {
-    event.preventDefault();
-
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-
-    let subject = "Message from " + name;
-
-    let body =
-        "Name: " + name + "%0D%0A" +
-        "Email: " + email + "%0D%0A%0D%0A" +
-        "Message:%0D%0A" + message;
-
-    let gmailLink =
-        "https://mail.google.com/mail/?view=cm&fs=1" +
-        "&to=Vanshika@gmail.com" +
-        "&su=" + encodeURIComponent(subject) +
-        "&body=" + body;
-
-    window.open(gmailLink, "_blank");
-}
-</script>
-
 <body>
 
     <header>
@@ -238,34 +213,48 @@ function sendEmail(event) {
     <h2>Contact Me</h2>
 
     <p>
-        Want to say hi? Fill this out and it will open Gmail with your message ready to send.
+        Want to say hi? Fill out the form below.
     </p>
 
-    <form class="contact-form" onsubmit="sendEmail(event)">
+    <form
+        class="contact-form"
+        action="mailto:Vanshika@gmail.com"
+        method="post"
+        enctype="text/plain"
+    >
 
         <label for="name">Name</label>
+
         <input
             type="text"
             id="name"
+            name="Name"
             placeholder="Your name"
             required
         >
 
+
         <label for="email">Your Email</label>
+
         <input
             type="email"
             id="email"
+            name="Email"
             placeholder="your@email.com"
             required
         >
 
+
         <label for="message">Message</label>
+
         <textarea
             id="message"
+            name="Message"
             rows="5"
             placeholder="Write something..."
             required
         ></textarea>
+
 
         <button type="submit">Send Message</button>
 
