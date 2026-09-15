@@ -1,4 +1,3 @@
-/* Basic page styling */
 
 * {
     box-sizing: border-box;
@@ -17,8 +16,6 @@ body {
     line-height: 1.6;
 }
 
-
-/* Navigation */
 
 header {
     background-color: #ffffff;
@@ -59,8 +56,6 @@ header {
     color: #4d6b5a;
 }
 
-
-/* Home section */
 
 .hero {
     max-width: 1050px;
@@ -105,8 +100,6 @@ header {
 }
 
 
-/* Buttons */
-
 .button,
 .contact-form button {
     display: inline-block;
@@ -130,8 +123,6 @@ header {
 }
 
 
-/* General sections */
-
 .section {
     max-width: 1050px;
     margin: auto;
@@ -148,8 +139,6 @@ header {
     margin-bottom: 25px;
 }
 
-
-/* About */
 
 .about-box {
     background-color: white;
@@ -187,8 +176,6 @@ header {
     list-style: none;
 }
 
-
-/* Projects */
 
 .project-container {
     display: grid;
@@ -239,8 +226,6 @@ header {
 }
 
 
-/* Blog */
-
 .blog-section {
     background-color: #ecefe9;
 
@@ -275,8 +260,6 @@ header {
 }
 
 
-/* Silly stuff */
-
 .silly-box {
     background-color: #fff8dc;
 
@@ -295,8 +278,6 @@ header {
     margin-bottom: 0;
 }
 
-
-/* Contact */
 
 .contact-section {
     text-align: center;
@@ -351,8 +332,6 @@ header {
 }
 
 
-/* Footer */
-
 footer {
     text-align: center;
 
@@ -369,8 +348,6 @@ footer p:first-child {
     margin-bottom: 5px;
 }
 
-
-/* Makes the site work on smaller screens */
 
 @media (max-width: 800px) {
 
