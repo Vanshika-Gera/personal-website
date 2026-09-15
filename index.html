@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanshika's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+function sendEmail(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    let subject = "Message from " + name;
+
+    let body =
+        "Name: " + name + "%0D%0A" +
+        "Email: " + email + "%0D%0A%0D%0A" +
+        "Message:%0D%0A" + message;
+
+    let gmailLink =
+        "https://mail.google.com/mail/?view=cm&fs=1" +
+        "&to=Vanshika@gmail.com" +
+        "&su=" + encodeURIComponent(subject) +
+        "&body=" + body;
+
+    window.open(gmailLink, "_blank");
+}
+</script>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Vanshika</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p class="small-text">Hello there</p>
+
+            <h1>Welcome to my little corner of the internet.</h1>
+
+            <p>
+                I'm Vanshika, a student who is learning how to make websites
+                without making everything unnecessarily complicated.
+            </p>
+
+            <a href="#about" class="button">A little about me</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=700&q=80"
+                 alt="Laptop and notebook on a desk">
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+
+        <div class="about-box">
+            <div>
+                <p>
+                    Hi! I'm Vanshika. I'm currently learning the basics of
+                    HTML and CSS, so this website is basically me experimenting
+                    with everything I've learned so far.
+                </p>
+
+                <p>
+                    I like learning new things, working on random ideas and
+                    spending way too much time trying to make things look nice.
+                </p>
+            </div>
+
+            <div class="facts">
+                <h3>A few facts</h3>
+
+                <ul>
+                    <li>Student</li>
+                    <li>Learning web development</li>
+                    <li>Usually listening to music</li>
+                    <li>Pizza enthusiast</li>
+                    <li>Definitely a night owl</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <p class="section-intro">
+            Here are a few things I've worked on or would like to work on.
+        </p>
+
+        <div class="project-container">
+
+            <article class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=700&q=80"
+                     alt="Code on a computer screen">
+
+                <div class="card-content">
+                    <h3>My First Website</h3>
+
+                    <p>
+                        A simple website made using HTML and CSS while
+                        learning the basics.
+                    </p>
+
+                    <a href="#">View Project</a>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=700&q=80"
+                     alt="Notebook and planning workspace">
+
+                <div class="card-content">
+                    <h3>School Project</h3>
+
+                    <p>
+                        A project where I put together information, research
+                        and way too many tabs.
+                    </p>
+
+                    <a href="#">Read More</a>
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=700&q=80"
+                     alt="Creative design workspace">
+
+                <div class="card-content">
+                    <h3>Future Idea</h3>
+
+                    <p>
+                        A website or small app that I want to build when
+                        I get better at coding.
+                    </p>
+
+                    <a href="#">Coming Soon</a>
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+    <section id="blog" class="section blog-section">
+
+        <h2>Random Blog Posts</h2>
+
+        <article class="blog-post">
+
+            <h3>Why I started learning HTML</h3>
+
+            <p class="date">August 2026</p>
+
+            <p>
+                I wanted to understand how websites actually work instead
+                of just opening them and wondering how people made them.
+                HTML seemed like a good place to start.
+            </p>
+
+        </article>
+
+
+        <article class="blog-post">
+
+            <h3>Things I want to learn next</h3>
+
+            <p class="date">Maybe soon...</p>
+
+            <p>
+                JavaScript is definitely somewhere on the list. I also want
+                to learn how to make websites look better without having
+                500 lines of CSS.
+            </p>
+
+        </article>
+
+    </section>
+
+    <section class="section silly-section">
+
+        <h2>Silly Stuff</h2>
+
+        <div class="silly-box">
+
+            <p>
+                Song currently stuck in my head:
+                <strong>Something random</strong>
+            </p>
+
+            <p>
+                Most important question:
+                <strong>Is extra cheese actually extra if I always order it?</strong>
+            </p>
+
+            <p>
+                Current brain status:
+                <strong>Loading...</strong>
+            </p>
+
+            <p>
+                Random fact:
+                <strong>I made this website instead of sleeping.</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+<section id="contact" class="section contact-section">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        Want to say hi? Fill this out and it will open Gmail with your message ready to send.
+    </p>
+
+    <form class="contact-form" onsubmit="sendEmail(event)">
+
+        <label for="name">Name</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Your name"
+            required
+        >
+
+        <label for="email">Your Email</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="your@email.com"
+            required
+        >
+
+        <label for="message">Message</label>
+        <textarea
+            id="message"
+            rows="5"
+            placeholder="Write something..."
+            required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+    <footer>
+
+        <p>Made with HTML & CSS</p>
+
+        <p>© 2026 My Personal Website</p>
+
+    </footer>
+
+</body>
+</html>
